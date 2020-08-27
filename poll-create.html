@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+<div id="app">
+    <div class="page-wrap">
+        <div class="page">
+            <div class="title-wrap">
+                <h1 class="title">Создание опроса</h1>
+                <p class="title-notification">Опрос сохранен в <a href="">«мои опросы»</a>.</p>
+            </div>
+            <div class="poll-create-form">
+                <div class="poll-steps-indicator">
+                    <div class="poll-steps-indicator__item poll-steps-indicator__item--active">
+                        <p class="poll-steps-indicator__num circle-icon">1</p>
+                        <p class="poll-steps-indicator__name">Опрос</p>
+                    </div>
+                    <div class="poll-steps-indicator__item">
+                        <p class="poll-steps-indicator__num circle-icon">2</p>
+                        <p class="poll-steps-indicator__name">Внешний вид</p>
+                    </div>
+                    <div class="poll-steps-indicator__item">
+                        <p class="poll-steps-indicator__num circle-icon">3</p>
+                        <p class="poll-steps-indicator__name">Срок опроса</p>
+                    </div>
+                    <div class="poll-steps-indicator__item">
+                        <p class="poll-steps-indicator__num circle-icon">4</p>
+                        <p class="poll-steps-indicator__name">Приватность</p>
+                    </div>
+                </div>
+
+                <div class="poll-create-form__inputs">
+                    <div class="input-field">
+                        <label class="input-field__label">Название*</label>
+                        <input class="input" type="text" placeholder="Иванова">
+                    </div>
+
+                    <div class="poll-create-form__inputs-textarea input-field">
+                        <label class="input-field__label">Описание</label>
+                        <div class="textarea">
+                            <div class="textarea__counter">340/340</div>
+                            <textarea></textarea>
+                        </div>
+                    </div>
+
+                    <div class="poll-create-form__add-question-btn add-question-btn">
+                        <div class="add-question-btn__icon circle-icon">+</div>
+                        <p class="add-question-btn__text">Добавить вопрос</p>
+                    </div>
+
+                    <div class="poll-create-form__blue-header-block blue-header-block">
+
+                        <div class="blue-header-block__header">
+                            <p>Выберите тип ответа</p>
+                        </div>
+                        <ul class="blue-header-block__list">
+                            <li class="blue-header-block__item">
+                                <div class="blue-header-block__icon">
+                                    <svg width="24" height="24" viewBox="0 0 24 24">
+                                        <use xlink:href="/assets/img/sprite-icons.svg#thumb-icon"></use>
+                                    </svg>
+                                </div>
+                                Да/Нет/Не знаю
+                            </li>
+                            <li class="blue-header-block__item">
+                                <div class="blue-header-block__icon">
+                                    <svg width="20" height="20" viewBox="0 0 20 20">
+                                        <use xlink:href="/assets/img/sprite-icons.svg#radio-icon"></use>
+                                    </svg>
+                                </div>
+                                Один вариант ответа
+                            </li>
+                            <li class="blue-header-block__item">
+                                <div class="blue-header-block__icon">
+                                    <svg width="18" height="18" viewBox="0 0 18 18">
+                                        <use xlink:href="/assets/img/sprite-icons.svg#check-icon"></use>
+                                    </svg>
+                                </div>
+                                Несколько вариантов ответа
+                            </li>
+                            <li class="blue-header-block__item">
+                                <div class="blue-header-block__icon">
+                                    <svg width="20" height="19" viewBox="0 0 20 19">
+                                        <use xlink:href="/assets/img/sprite-icons.svg#star-icon"></use>
+                                    </svg>
+                                </div>
+                                От 1 до 5
+                            </li>
+                            <li class="blue-header-block__item">
+                                <div class="blue-header-block__icon">
+                                    <svg width="14" height="15" viewBox="0 0 14 15">
+                                        <use xlink:href="/assets/img/sprite-icons.svg#letter-icon"></use>
+                                    </svg>
+                                </div>
+                                Свой вариант ответа
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="poll-create-form__question-element question-element">
+                        <div class="question-element__header">
+                            <input type="text" placeholder="Введите название вопроса">
+                            <div class="question-element__delete-btn">
+                                <svg>
+                                    <use xlink:href="/assets/img/sprite-icons.svg#trash-icon"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <ul class="question-element__list">
+                            <li class="question-element__item">
+                                <div class="question-element__checkbox">
+                                    <label class="control control-radio">
+                                        <input type="radio" name="radio" checked="checked"/>
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                </div>
+                                <input type="text" placeholder="Напишите ответ" class="question-element__item-input">
+                            </li>
+                            <li class="question-element__item">
+                                <div class="question-element__checkbox">
+                                    <label class="control control-radio">
+                                        <input type="radio" name="radio" checked="checked"/>
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                </div>
+                                <input type="text" placeholder="Напишите ответ" class="question-element__item-input">
+                            </li>
+                            <li class="question-element__item">
+                                <div class="question-element__checkbox">
+                                    <label class="control control-radio">
+                                        <input type="radio" name="radio" checked="checked"/>
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                </div>
+                                <input type="text" placeholder="Напишите ответ" class="question-element__item-input">
+                            </li>
+                        </ul>
+                        <div class="question-element__footer">
+                            <div class="question-element__add-btn-wrap">
+                                <div class="question-element__add-btn-icon">+</div>
+                                Добавить вариант ответа
+                            </div>
+                            <div class="question-element__switch">
+                                Обязательный вопрос
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" id="myonoffswitch3" class="onoffswitch-checkbox">
+                                    <label for="myonoffswitch3" class="onoffswitch-label">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="poll-create-form__question-element question-element">
+                        <div class="question-element__header">
+                            <input type="text" placeholder="Введите название вопроса">
+                            <div class="question-element__delete-btn">
+                                <svg>
+                                    <use xlink:href="/assets/img/sprite-icons.svg#trash-icon"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <ul class="question-element__list">
+                            <li class="question-element__item">
+                                <div class="question-element__checkbox">
+                                    <label class="control-check control-check-checkbox">
+                                        <input type="checkbox" checked="checked" />
+                                        <div class="control-check_indicator"></div>
+                                    </label>
+                                </div>
+                                <input type="text" placeholder="Напишите ответ" class="question-element__item-input">
+                            </li>
+                            <li class="question-element__item">
+                                <div class="question-element__checkbox">
+                                    <label class="control-check control-check-checkbox">
+                                        <input type="checkbox" checked="checked" />
+                                        <div class="control-check_indicator"></div>
+                                    </label>
+                                </div>
+                                <input type="text" placeholder="Напишите ответ" class="question-element__item-input">
+                            </li>
+                        </ul>
+                        <div class="question-element__footer">
+                            <div class="question-element__add-btn-wrap">
+                                <div class="question-element__add-btn-icon">+</div>
+                                Добавить вариант ответа
+                            </div>
+                            <div class="question-element__switch">
+                                Обязательный вопрос
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" id="myonoffswitch4" class="onoffswitch-checkbox">
+                                    <label for="myonoffswitch4" class="onoffswitch-label">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="poll-create-form__question-element question-element">
+                        <div class="question-element__header">
+                            <input type="text" placeholder="Введите название вопроса">
+                            <div class="question-element__delete-btn">
+                                <svg>
+                                    <use xlink:href="/assets/img/sprite-icons.svg#trash-icon"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <ul class="question-element__number-list">
+                            <li class="number-el number-el--active">1</li>
+                            <li class="number-el number-el--active">2</li>
+                            <li class="number-el number-el--active">3</li>
+                            <li class="number-el">4</li>
+                            <li class="number-el">5</li>
+                        </ul>
+                        <div class="question-element__footer question-element__footer--no-border">
+                            <div class="question-element__switch">
+                                Обязательный вопрос
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" id="myonoffswitch5" class="onoffswitch-checkbox">
+                                    <label for="myonoffswitch5" class="onoffswitch-label">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="poll-create-form__question-element question-element">
+                        <div class="question-element__header">
+                            <input type="text" placeholder="Введите название вопроса">
+                            <div class="question-element__delete-btn">
+                                <svg>
+                                    <use xlink:href="/assets/img/sprite-icons.svg#trash-icon"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="question-element__disabled-input">Ответ</div>
+                        <div class="question-element__footer question-element__footer--no-border">
+                            <div class="question-element__switch">
+                                Обязательный вопрос
+                                <div class="onoffswitch">
+                                    <input type="checkbox" name="onoffswitch" id="myonoffswitch6" class="onoffswitch-checkbox">
+                                    <label for="myonoffswitch6" class="onoffswitch-label">
+                                        <span class="onoffswitch-inner"></span>
+                                        <span class="onoffswitch-switch"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="poll-create-form__input-field-btns input-field-btns">
+                        <button class="btn btn--white" type="button">Назад</button>
+                        <button class="btn poll-create-form__next-btn" type="button">Следующий шаг</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,204 @@
+.control {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 5px;
+  padding-top: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.control input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.control_indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background: #fff;
+  border: 2px solid #cad2e2;
+}
+.control:hover input ~ .control_indicator,
+.control input:focus ~ .control_indicator {
+  background: #fff;
+}
+
+.control input:checked ~ .control_indicator {
+  background: #ffffff;
+  border: 2px solid #4772f4;
+}
+.control:hover input:not([disabled]):checked ~ .control_indicator,
+.control input:checked:focus ~ .control_indicator {
+}
+.control input:disabled ~ .control_indicator {
+  //background: #e6e6e6;
+  //opacity: 0.6;
+  pointer-events: none;
+}
+.control_indicator:after {
+  box-sizing: unset;
+  content: "";
+  position: absolute;
+  display: none;
+}
+.control input:checked ~ .control_indicator:after {
+  display: block;
+}
+.control-radio .control_indicator {
+  border-radius: 50%;
+}
+
+.control-radio .control_indicator:after {
+  left: 3px;
+  top: 3px;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background: #4772f4;
+}
+.control-radio--disabled {
+  pointer-events: none;
+  .control_indicator {
+    border-color: #cad2e2 !important;
+    &:after {
+      background: #cad2e2;
+    }
+  }
+}
+
+// switch input
+
+.onoffswitch {
+  position: relative;
+  width: 24px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+  display: none;
+}
+.onoffswitch-label {
+  display: block;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 30px;
+}
+.onoffswitch-inner {
+  display: block;
+  width: 200%;
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before,
+.onoffswitch-inner:after {
+  display: block;
+  float: left;
+  width: 50%;
+  padding: 0;
+  font-size: 10px;
+  color: white;
+  font-family: Trebuchet, Arial, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+  height: 16px;
+  line-height: 16px;
+}
+.onoffswitch-inner:before {
+  content: "";
+  padding-left: 10px;
+  background-color: #00c895;
+}
+.onoffswitch-inner:after {
+  content: "";
+  padding-right: 10px;
+  background-color: #cad2e2;
+  color: #999999;
+  text-align: right;
+}
+.onoffswitch-switch {
+  display: block;
+  width: 12px;
+  margin: 2px;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 8px;
+  border-radius: 30px;
+  transition: all 0.2s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+  background-color: #fff;
+}
+
+.control-check {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 5px;
+  padding-top: 3px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.control-check input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.control-check_indicator {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  background: #fff;
+  border: 2px solid #cad2e2;
+  border-radius: 0px;
+}
+.control-check:hover input ~ .control-check_indicator,
+.control-check input:focus ~ .control-check_indicator {
+  background: #fff;
+}
+
+.control-check input:checked ~ .control-check_indicator {
+  background: #fff;
+  border: 2px solid #4772f4;
+}
+.control-check:hover input:not([disabled]):checked ~ .control-check_indicator,
+.control-check input:checked:focus ~ .control-check_indicator {
+  background: #fff;
+}
+.control-check input:disabled ~ .control-check_indicator {
+  background: #fff;
+  opacity: 10;
+  pointer-events: none;
+}
+.control-check_indicator:after {
+  box-sizing: unset;
+  content: "";
+  position: absolute;
+  display: none;
+}
+.control-check input:checked ~ .control-check_indicator:after {
+  display: block;
+}
+.control-check-checkbox .control-check_indicator:after {
+  left: 5px;
+  top: 0px;
+  width: 3px;
+  height: 10px;
+  border: solid #4772f4;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.control-check-checkbox input:disabled ~ .control-check_indicator:after {
+  border-color: #4772f4;
+}

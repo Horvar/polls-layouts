@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="aaef39bb-07ba-4df0-9099-ab2fa6e94c0c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1dDkvdj7zok00GKC2TnmCISFAEQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assets/css/scss" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/assets/css/scss" />
+      <recent name="$PROJECT_DIR$/assets" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="ShConfigurationType" nameIsGenerated="true">
+      <option name="SCRIPT_PATH" value="$PROJECT_DIR$/sync.sh" />
+      <option name="SCRIPT_OPTIONS" value="" />
+      <option name="SCRIPT_WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="INTERPRETER_PATH" value="/bin/zsh" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="aaef39bb-07ba-4df0-9099-ab2fa6e94c0c" name="Default Changelist" comment="" />
+      <created>1591967282845</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591967282845</updated>
+      <workItem from="1591967285100" duration="756000" />
+      <workItem from="1591972074932" duration="1476000" />
+      <workItem from="1591975272663" duration="4854000" />
+      <workItem from="1592034203848" duration="172000" />
+      <workItem from="1592118101160" duration="185000" />
+      <workItem from="1592383935737" duration="11244000" />
+      <workItem from="1592553732105" duration="12465000" />
+      <workItem from="1592584440961" duration="3582000" />
+      <workItem from="1592648072004" duration="10000" />
+      <workItem from="1592808750346" duration="10346000" />
+      <workItem from="1592830315354" duration="4326000" />
+      <workItem from="1592906432319" duration="21000" />
+      <workItem from="1593003463363" duration="6847000" />
+      <workItem from="1593154682446" duration="13000" />
+      <workItem from="1593597723364" duration="7700000" />
+      <workItem from="1593618936546" duration="20000" />
+      <workItem from="1593678429789" duration="10178000" />
+      <workItem from="1593698445553" duration="3039000" />
+      <workItem from="1594038452062" duration="4282000" />
+      <workItem from="1594109025436" duration="4183000" />
+      <workItem from="1594193077693" duration="878000" />
+      <workItem from="1594200927935" duration="147000" />
+      <workItem from="1594201159566" duration="598000" />
+      <workItem from="1594283642973" duration="16000" />
+      <workItem from="1594301276040" duration="1163000" />
+      <workItem from="1594324278078" duration="27000" />
+      <workItem from="1594386132021" duration="1459000" />
+      <workItem from="1594461304810" duration="283000" />
+      <workItem from="1594463990185" duration="380000" />
+      <workItem from="1594633525182" duration="3000" />
+      <workItem from="1595258669722" duration="764000" />
+      <workItem from="1595273981021" duration="51000" />
+      <workItem from="1595316795350" duration="172000" />
+      <workItem from="1595685075982" duration="27000" />
+      <workItem from="1596022379693" duration="35000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="360" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591967517914">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="360" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1591967517914" />
+    <state x="624" y="370" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592820104777">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="624" y="370" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1592820104777" />
+    <state x="469" y="345" key="EditFileWatcherDialog" timestamp="1591967464617">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="469" y="345" key="EditFileWatcherDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1591967464617" />
+    <state x="100" y="100" width="1592" height="920" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1593700583127">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="100" y="100" width="1592" height="920" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1593700583127" />
+    <state x="554" y="182" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1593699222897">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="554" y="182" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1593699222897" />
+    <state x="554" y="333" width="842" height="539" key="find.popup" timestamp="1594139233544">
+      <screen x="0" y="23" width="1792" height="1097" />
+    </state>
+    <state x="554" y="317" width="842" height="550" key="find.popup/0.0.1792.1120@0.0.1792.1120" timestamp="1593700941552" />
+    <state x="554" y="333" width="842" height="539" key="find.popup/0.23.1792.1097@0.23.1792.1097" timestamp="1594139233544" />
+  </component>
+</project>

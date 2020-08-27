@@ -1,0 +1,270 @@
+.lecture-page {
+  padding-top: 100px;
+  width: 100%;
+  margin: 0 auto;
+}
+.lecture__title {
+  font-size: 34px;
+  line-height: 41px;
+  font-family: $fontBold;
+  margin-bottom: 20px;
+}
+.lecture__label-text {
+  margin-bottom: 30px;
+}
+.lecture__desc {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+.lecture__answer {
+  margin-bottom: 20px;
+}
+.lecture__answer--disallow {
+  * {
+    cursor: not-allowed;
+  }
+  .question-element__item,
+  .question-element__number-list {
+    pointer-events: none;
+  }
+}
+.lecture__btn-wrap {
+  display: flex;
+  margin-bottom: 20px;
+  .btn {
+    width: 100%;
+    max-width: 236px;
+  }
+}
+.lecture__btn-next {
+  //margin-left: auto;
+}
+.lecture-info {
+  text-align: center;
+  margin: 0 auto;
+}
+.lecture__main {
+}
+.textarea-wrapper__btn {
+  align-self: baseline;
+  margin-right: 24px;
+  height: 48px;
+  margin-top: 16px;
+}
+
+.lecture-info__btn {
+  width: auto;
+  display: inline-block;
+}
+
+.lecture-page-wrap {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  .lecture-page {
+    text-align: center;
+    padding-top: 40px;
+  }
+  .client-page-header__inner {
+    justify-content: center;
+  }
+  .statistic-question__mandatory-label {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #68688f;
+    font-family: $fontBold;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  .client-page-inner {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-bottom: 100px;
+  }
+}
+
+.lecture-container {
+  width: 100%;
+  max-width: 740px;
+  margin: 0 auto;
+}
+
+//лектор начало
+.lecture-page--user-is-lecturer:not(.lecture-page--lecture-starting) {
+  .lecture-page {
+    padding-top: 100px;
+  }
+  .lecture__btn-wrap {
+    justify-content: center;
+  }
+}
+//лектор
+.lecture-page--user-is-lecturer.lecture-page--lecture-starting {
+  .lecture-page {
+    text-align: left;
+    //padding-top: 40px;
+  }
+  .client-page-header__inner {
+    justify-content: flex-start;
+  }
+  .lecture__btn-wrap {
+    justify-content: space-between;
+  }
+  .lecture-container {
+    width: 100%;
+    max-width: 1158px;
+    display: flex;
+    padding: 0 50px;
+  }
+  .lecture__answer,
+  .lecture__btn-wrap {
+    max-width: 540px;
+  }
+  .lecture__main,
+  .statistic-diagram {
+    flex: 1;
+    flex-basis: 50%;
+  }
+  .statistic-diagram {
+    border: none;
+    margin-left: 30px;
+    padding-left: 30px;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -50vh;
+      bottom: -50vh;
+      border-left: 1px solid #ededf2;
+    }
+  }
+  .diagram-pie {
+    //margin-top: -70px;
+  }
+}
+
+//участник
+.lecture-page--lecture-starting:not(.lecture-page--user-is-lecturer) {
+  .lecture-container {
+    max-width: 540px;
+  }
+}
+
+.lecture-question-name {
+  font-family: $fontBold;
+  font-size: 34px;
+  line-height: 41px;
+  margin-bottom: 30px;
+}
+
+.lecture__btn-wrap--vote {
+  .btn {
+    max-width: none;
+  }
+}
+
+.lecture-top-wrap {
+}
+.lecture__btn-wrap--mobile {
+  display: none;
+}
+
+@media (max-width: 960px) {
+  .lecture-page-wrap {
+    .label-text {
+      font-size: 14px;
+      line-height: 17px;
+    }
+    .lecture__label-text {
+      margin-bottom: 20px;
+    }
+    .lecture-page {
+      text-align: left;
+      padding-top: 50px;
+      padding-left: 16px;
+      padding-right: 16px;
+      width: auto;
+    }
+    .client-page-header__inner {
+      justify-content: flex-start;
+    }
+    .lecture__title {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    .lecture__desc {
+      font-size: 16px;
+      line-height: 140%;
+    }
+    .lecture__btn-wrap .btn {
+      max-width: none;
+    }
+    .lecture-question-name {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    .question-element__item {
+      font-size: 14px;
+    }
+    .statistic-question__mandatory-label {
+      font-size: 12px;
+      line-height: 14px;
+      margin-bottom: 10px;
+    }
+  }
+  .lecture-page--user-is-lecturer.lecture-page--lecture-starting {
+    .lecture-container {
+      flex-direction: column;
+      display: block;
+      width: auto;
+      padding: 0;
+    }
+    .diagram-pie {
+      margin-top: 0;
+    }
+    .lecture__answer,
+    .lecture__btn-wrap {
+      //max-width: none;
+    }
+    .lecture__main,
+    .statistic-diagram {
+      flex: auto;
+    }
+    .statistic-diagram {
+      margin: 0;
+      padding: 0;
+      &:after {
+        display: none;
+      }
+    }
+  }
+  .lecture__btn-wrap--controls:not(.lecture__btn-wrap--mobile) {
+    display: none;
+  }
+  .lecture__btn-wrap--controls.lecture__btn-wrap--mobile {
+    margin-top: 30px;
+    flex-direction: column;
+    .lecture__btn-prev {
+      margin-bottom: 20px;
+    }
+  }
+  .client-page-header {
+    display: none;
+  }
+  .lecture-page-wrap {
+    .client-page-header {
+      display: block;
+    }
+  }
+  .lecture-info {
+    text-align: left;
+  }
+  .lecture__btn-wrap--mobile {
+    display: block;
+  }
+}

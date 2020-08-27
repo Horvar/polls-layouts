@@ -1,0 +1,357 @@
+.client-page-wrap {
+  width: 100%;
+  //background: #f8f9fc;
+  //padding-bottom: 100px;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+.client-page-container {
+  width: 100%;
+  max-width: 1158px;
+  padding: 0 24px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.client-page-header {
+  width: 100%;
+  font-family: $fontMedium2;
+  font-size: 16px;
+  line-height: 24px;
+  background: #fff;
+  position: relative;
+  &__logo {
+    width: 100px;
+    img {
+      width: 100%;
+    }
+  }
+  &__nav {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    ul {
+      display: flex;
+      li {
+        &:not(:last-of-type) {
+          margin-right: 50px;
+        }
+      }
+    }
+  }
+  &__sign {
+    display: flex;
+  }
+  &__sign-fake-btn {
+    box-shadow: none;
+    border: none;
+    background: none;
+    font-family: $fontMedium2;
+    margin-right: 30px;
+  }
+  &__inner {
+    height: 74px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.client-page-breadcrumbs {
+  font-size: 14px;
+  line-height: 18px;
+  color: $textColor2;
+  margin: 15px 0;
+  ul {
+    display: flex;
+    li {
+      &:not(:last-of-type) {
+        &:after {
+          content: ">";
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}
+
+.client-title {
+  font-size: 34px;
+  line-height: 41px;
+  font-family: $fontBold;
+}
+
+.client-poll-wrap {
+  display: flex;
+  margin-top: 60px;
+  &__left {
+    //margin-right: 120px;
+  }
+  &__right {
+    width: 384px;
+    flex-shrink: 0;
+  }
+}
+
+.client-poll {
+  &__text {
+    margin-top: 20px;
+    p {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+  &__list {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 592px;
+  }
+  &__question-element {
+    &:not(:last-of-type) {
+      margin-bottom: 24px;
+    }
+  }
+  &__btn-wrap {
+    margin-top: 24px;
+    width: 100%;
+    max-width: 592px;
+    .btn {
+      width: 100%;
+      max-width: 236px;
+      margin-left: auto;
+    }
+  }
+}
+
+.client-poll-info {
+  background: #ffffff;
+  border: 1px solid #ededf2;
+  box-sizing: border-box;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  &__title {
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $textColor2;
+    font-family: $fontBold;
+  }
+  &__logo {
+    margin-top: 10px;
+  }
+  &__fields-wrap {
+    margin-top: 20px;
+    display: flex;
+  }
+  &__field {
+    &:not(:last-of-type) {
+      margin-right: 30px;
+    }
+  }
+  &__field-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  &__social {
+    margin-top: 20px;
+    padding-top: 20px;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      left: -30px;
+      right: -30px;
+      top: 0;
+      border-top: 1px solid #ededf2;
+    }
+  }
+  &__social-links {
+    margin-top: 10px;
+    display: flex;
+  }
+  &__social-item {
+    margin-right: 15px;
+  }
+  &__share-btn {
+    cursor: pointer;
+    svg {
+      fill: #fff;
+    }
+  }
+}
+
+.client-poll-name-element {
+  display: flex;
+  align-items: center;
+  &__poll-cover {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  &__text {
+  }
+  &__name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  &__position {
+    font-size: 14px;
+    line-height: 18px;
+    color: $textColor2;
+    margin-top: 5px;
+  }
+}
+
+.other-polls {
+  margin-top: 200px;
+}
+.polls-list-title {
+  font-size: 54px;
+  line-height: 64px;
+  font-family: $fontBold;
+  &__wrap {
+    display: flex;
+    align-items: baseline;
+  }
+}
+.polls-list {
+  &__counter {
+    font-size: 24px;
+    line-height: 29px;
+    font-family: $fontBold;
+    color: $textColor2;
+    width: 56px;
+    height: 56px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 126, 255, 0.04);
+    border-radius: 6px;
+    margin-left: 30px;
+    transform: translateY(-5px);
+  }
+  &__all-link {
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: auto;
+    svg {
+      margin-left: 5px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px -15px -30px;
+  }
+}
+.polls-list__client-polls-item {
+  width: calc(100% / 3 - 32px);
+  margin: 0 15px 30px;
+}
+.client-polls-item {
+  background: #ffffff;
+  border: 1px solid #ededf2;
+  border-radius: 16px;
+  a {
+    padding: 30px;
+    height: 285px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  &__logo {
+  }
+  &__text {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 28px;
+    max-height: 112px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    p {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  &__link {
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: $blue;
+    font-family: $fontBold;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: -10px;
+  }
+  &__circle-icon {
+    margin-left: 14px;
+    svg {
+      fill: #fff;
+    }
+  }
+}
+
+.client-poll-cover {
+  height: 400px;
+  position: relative;
+  width: 100vw;
+  right: calc(50vw - 50%);
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.client-page__center-title {
+  font-size: 34px;
+  line-height: 41px;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.all-polls {
+  margin-top: 100px;
+}
+
+.all-polls-pagination {
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.home-page-title {
+  font-size: 64px;
+  line-height: 76px;
+  text-align: center;
+  margin-top: 80px;
+}
+.home-page-subtitle {
+  font-size: 24px;
+  line-height: 28px;
+  font-family: $fontMedium;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.home-page-img {
+  margin-top: 30px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.client-poll__error-text {
+  margin-bottom: 30px;
+}
+
+.client-page-header__btn {
+  padding: 0.7em 2.2em;
+  line-height: 1;
+}

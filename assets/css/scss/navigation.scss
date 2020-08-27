@@ -1,0 +1,150 @@
+.navigation {
+  width: 70px;
+  border-right: 1px solid #ededf2;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  cursor: e-resize;
+  &__top {
+    border-bottom: 1px solid #ededf2;
+  }
+  &__body {
+  }
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50px;
+    flex-shrink: 0;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__icon {
+    font-size: 28px;
+    font-family: $font;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+  }
+  &__create-btn {
+    //box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.16);
+    background: #cad2e2;
+    transition: 0.2s;
+    &:hover {
+      background: $blue;
+    }
+  }
+  &__footer {
+    margin-top: auto;
+  }
+  &__row {
+    padding: 24px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
+a.navigation-field {
+  outline: unset;
+}
+.navigation-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #cad2e2;
+  pointer-events: none;
+  svg {
+    transition: 0.2s;
+  }
+  &:not(:last-of-type) {
+    margin-bottom: 24px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: $textColor2;
+    margin-left: 15px;
+    display: none;
+  }
+  &:hover,
+  &--active {
+    fill: $blue;
+    p {
+      color: $blue;
+      text-decoration: underline;
+    }
+    .navigation__create-btn {
+      background: $blue;
+    }
+  }
+}
+.navigation-field--avatar {
+  p {
+    font-family: $fontBold;
+    line-height: 19px;
+  }
+}
+.navigation-width {
+  width: 70px;
+}
+
+.navigation-exit {
+  border: 1px solid #ededf2;
+  box-sizing: border-box;
+  border-radius: 8px;
+  fill: #cad2e2;
+  padding: 11px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    font-size: 13px;
+    line-height: 16px;
+    font-family: $fontBold;
+    margin-left: 10px;
+    white-space: nowrap;
+  }
+}
+.navigation-field--exit-btn {
+  margin-left: -5px;
+}
+.navigation--open {
+  .navigation-width {
+    width: 208px;
+  }
+  .navigation {
+    width: 208px;
+    cursor: default;
+  }
+  .navigation__row {
+    align-items: baseline;
+  }
+  .navigation-exit {
+    border-color: $blue;
+    background: $blue;
+    fill: #fff;
+    width: 100%;
+    p {
+      color: #ffffff;
+    }
+  }
+  .navigation-field--exit-btn {
+    width: 100%;
+    margin-left: 0;
+  }
+  .navigation-field {
+    pointer-events: all;
+    p {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+<div id="app">
+    <div class="page-wrap">
+        <div class="page">
+            <div class="title-wrap">
+                <h1 class="title">Создание опроса</h1>
+                <p class="title-notification">Опрос сохранен в <a href="">«мои опросы»</a>.</p>
+            </div>
+            <div class="poll-create-form">
+                <div class="poll-steps-indicator">
+                    <div class="poll-steps-indicator__item">
+                        <p class="poll-steps-indicator__num circle-icon">1</p>
+                        <p class="poll-steps-indicator__name">Опрос</p>
+                    </div>
+                    <div class="poll-steps-indicator__item">
+                        <p class="poll-steps-indicator__num circle-icon">2</p>
+                        <p class="poll-steps-indicator__name">Внешний вид</p>
+                    </div>
+                    <div class="poll-steps-indicator__item">
+                        <p class="poll-steps-indicator__num circle-icon">3</p>
+                        <p class="poll-steps-indicator__name">Срок опроса</p>
+                    </div>
+                    <div class="poll-steps-indicator__item poll-steps-indicator__item--active">
+                        <p class="poll-steps-indicator__num circle-icon">4</p>
+                        <p class="poll-steps-indicator__name">Приватность</p>
+                    </div>
+                </div>
+
+                <div class="poll-create-form__inputs">
+
+                    <label class="input-field__label">Обложка</label>
+
+                    <ul class="poll-create-form__radio-big-block radio-big-block">
+                        <li class="radio-big-block__item">
+                            <div class="radio-big-block__checkbox">
+                                <label class="control control-radio">
+                                    <input type="radio" name="radio"/>
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </div>
+                            <div class="radio-big-block__text-wrap">
+                                <p class="radio-big-block__name">Открытый опрос</p>
+                                <p class="radio-big-block__desc">Участвовать можно без регистрации, полная статистика не собирается.</p>
+                            </div>
+                        </li>
+                        <li class="radio-big-block__item radio-big-block__item--active">
+                            <div class="radio-big-block__checkbox">
+                                <label class="control control-radio">
+                                    <input type="radio" name="radio" checked/>
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </div>
+                            <div class="radio-big-block__text-wrap">
+                                <p class="radio-big-block__name">Открытый опрос</p>
+                                <p class="radio-big-block__desc">Участники должны пройти регистрацию. Собирается полноценная статистика.</p>
+                                <div class="radio-big-block__inner">
+                                    <p class="radio-big-block__name">Какие данные нужны для статистики?</p>
+                                    <ul>
+                                        <li>
+                                            <label class="control-check control-check-checkbox">
+                                                Все данные
+                                                <input type="checkbox" />
+                                                <div class="control-check_indicator"></div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="control-check control-check-checkbox">
+                                                Фамилия
+                                                <input type="checkbox" />
+                                                <div class="control-check_indicator"></div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="control-check control-check-checkbox">
+                                                Имя
+                                                <input type="checkbox" />
+                                                <div class="control-check_indicator"></div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="control-check control-check-checkbox">
+                                                Отчество
+                                                <input type="checkbox" />
+                                                <div class="control-check_indicator"></div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="control-check control-check-checkbox">
+                                                Дата рождения
+                                                <input type="checkbox" />
+                                                <div class="control-check_indicator"></div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="control-check control-check-checkbox">
+                                                Пол
+                                                <input type="checkbox" />
+                                                <div class="control-check_indicator"></div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="control-check control-check-checkbox">
+                                                Страна
+                                                <input type="checkbox" />
+                                                <div class="control-check_indicator"></div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="control-check control-check-checkbox">
+                                                Город
+                                                <input type="checkbox" />
+                                                <div class="control-check_indicator"></div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="control-check control-check-checkbox">
+                                                Специальность
+                                                <input type="checkbox" />
+                                                <div class="control-check_indicator"></div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="control-check control-check-checkbox">
+                                                Должность
+                                                <input type="checkbox" />
+                                                <div class="control-check_indicator"></div>
+                                            </label>
+                                        </li>
+                                        <li>
+                                            <label class="control-check control-check-checkbox">
+                                                Опыт работы
+                                                <input type="checkbox" />
+                                                <div class="control-check_indicator"></div>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="poll-create-form__input-field-btns input-field-btns">
+                        <button class="btn btn--white" type="button">Назад</button>
+                        <button class="btn poll-create-form__next-btn" type="button">Опубликовать</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

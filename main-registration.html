@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <div id="app">
+        <div class="page-wrap">
+            <div class="top-alert-block">
+                <svg class="top-alert-block__icon">
+                    <use xlink:href="/assets/img/sprite-icons.svg#alert-icon"></use>
+                </svg>
+                <p class="top-alert-block__text">Заполните профиль, чтобы создавать опросы.</p>
+                <button type="button" class="top-alert-block__close">
+                    <svg>
+                        <use xlink:href="/assets/img/sprite-icons.svg#close-icon"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="page">
+                <div class="title-wrap">
+                    <h1 class="title">Мой профиль</h1>
+                    <p class="title-notification">Все изменения сохраняются автоматически.</p>
+                </div>
+                <div class="profile-wrap">
+                    <div class="profile-col profile-col__1">
+                        <div class="profile-avatar">
+                            <img src="/assets/img/no-photo.png" alt="user avatar">
+                            <div class="profile-avatar__icon">
+                                <img src="/assets/img/photo-icon.svg" alt="photo icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-col profile-col__2">
+                        <form class="profile-form">
+                            <div class="input-field input-field--radio">
+                                <div>
+                                    <label class="control control-radio control-radio--disabled">
+                                        Я учитель
+                                        <input type="radio" checked="checked" />
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <label class="input-field__label">Фамилия *</label>
+                                <input class="input" type="text" placeholder="Иванова">
+                            </div>
+                            <div class="input-field">
+                                <label class="input-field__label">Имя *</label>
+                                <input class="input" type="text" placeholder="Иванова">
+                            </div>
+                            <div class="input-field">
+                                <label class="input-field__label">Отчество *</label>
+                                <input class="input" type="text" placeholder="Иванова">
+                            </div>
+                            <div class="input-field-group">
+                                <div class="input-field">
+                                    <label class="input-field__label">Дата рождения *</label>
+                                    <input class="input" type="text" placeholder="Иванова">
+                                </div>
+                                <div class="input-field input-field--radio">
+                                    <label class="input-field__label">Пол *</label>
+                                    <div>
+                                        <label class="control control-radio">
+                                            Муж
+                                            <input type="radio" name="radio" checked="checked" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                        <label class="control control-radio">
+                                            Жен
+                                            <input type="radio" name="radio"  />
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <label class="input-field__label">Страна *</label>
+                                <div class="select">
+                                    <p class="select__value">Выберите</p>
+                                    <svg class="select__arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.415 0.210022L6 4.79502L10.585 0.210022L12 1.62502L6 7.62502L0 1.62502L1.415 0.210022Z" fill="#CAD2E2"/>
+                                    </svg>
+                                    <div class="select-items" style="display: none;">
+                                        <div class="select-items-scrolled">
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-field">
+                                <label class="input-field__label">Город *</label>
+                                <div class="select select--filled">
+                                    <p class="select__value">Выберите</p>
+                                    <svg class="select__arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.415 0.210022L6 4.79502L10.585 0.210022L12 1.62502L6 7.62502L0 1.62502L1.415 0.210022Z" fill="#CAD2E2"/>
+                                    </svg>
+                                    <div class="select-items" style="display: none;">
+                                        <div class="select-items-scrolled">
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-field">
+                                <label class="input-field__label">Специальность *</label>
+                                <input class="input" type="text" placeholder="Иванова">
+                            </div>
+
+                            <div class="input-field">
+                                <label class="input-field__label">Должность *</label>
+                                <input class="input" type="text" placeholder="Иванова">
+                            </div>
+
+                            <div class="input-field">
+                                <label class="input-field__label">Опыт работы *</label>
+                                <input class="input" type="text" placeholder="Иванова">
+                            </div>
+
+                            <div class="input-field-btns">
+                                <button class="btn btn--white" type="button">Отменить</button>
+                                <button class="btn" type="button">Сохранить</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="profile-col profile-col__3">
+                        <div class="label-alert label-alert--red">
+                            <p class="label-alert__title">Лимит</p>
+                            <p class="label-alert__text">Вы не можете создавать опросы. <span class="label-alert__underline">Почему?</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup">
+            <form class="popup-inner">
+                <button type="button" class="popup-inner__close">
+                    <svg>
+                        <use xlink:href="/assets/img/sprite-icons.svg#close-icon"></use>
+                    </svg>
+                </button>
+                <h2 class="popup-inner__title title">Регистрация</h2>
+                <div class="popup-inner__radio input-field input-field--radio">
+                    <div>
+                        <label class="control control-radio">
+                            Я лектор
+                            <input type="radio" name="radio" checked="checked" />
+                            <div class="control_indicator"></div>
+                        </label>
+                        <label class="control control-radio">
+                            Я учитель
+                            <input type="radio" name="radio"  />
+                            <div class="control_indicator"></div>
+                        </label>
+                    </div>
+                </div>
+                <div class="input-field">
+                    <label class="input-field__label">Почта</label>
+                    <input class="input" type="text" placeholder="Иванова">
+                </div>
+                <div class="input-field">
+                    <label class="input-field__label">Пароль</label>
+                    <input class="input" type="text" placeholder="Иванова">
+                </div>
+                <div class="input-field">
+                    <label class="input-field__label">Повтор пароля</label>
+                    <input class="input" type="text" placeholder="Иванова">
+                </div>
+                <div class="input-field-btns">
+                    <button class="btn" type="button">Зарегистрироваться</button>
+                </div>
+                <p class="popup-inner__small-text small-text">Нажимая кнопку зарегистрироваться, вы принимаете <a href="">пользовательское соглашение</a></p>
+                <div class="popup-inner__footer">
+                    <p class="popup-inner__footer-text">Есть аккаунт?</p>
+                    <a href="" class="popup-inner__footer-link">Войдите</a>
+                </div>
+            </form>
+            <form class="popup-inner">
+                <button type="button" class="popup-inner__close">
+                    <svg>
+                        <use xlink:href="/assets/img/sprite-icons.svg#close-icon"></use>
+                    </svg>
+                </button>
+                <h2 class="popup-inner__title title">Вход</h2>
+
+                <div class="input-field">
+                    <label class="input-field__label">Почта</label>
+                    <input class="input" type="text" placeholder="Иванова">
+                </div>
+                <div class="input-field">
+                    <label class="input-field__label">Пароль</label>
+                    <input class="input" type="text" placeholder="Иванова">
+                </div>
+
+                <div class="popup-inner__right-link popup-inner__right-link--forget-password">
+                    <a href="">Забыли пароль?</a>
+                </div>
+                <div class="input-field-btns">
+                    <button class="btn" type="button">Войти</button>
+                </div>
+                <div class="popup-inner__footer">
+                    <p class="popup-inner__footer-text">Есть аккаунт?</p>
+                    <a href="" class="popup-inner__footer-link">Войдите</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

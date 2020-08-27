@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+<div id="app">
+    <div class="page-wrap">
+        <div class="page">
+            <div class="title-wrap">
+                <h1 class="title">Создание опроса</h1>
+                <p class="title-notification">Опрос сохранен в <a href="">«мои опросы»</a>.</p>
+            </div>
+            <div class="poll-create-form">
+                <div class="poll-steps-indicator">
+                    <div class="poll-steps-indicator__item">
+                        <p class="poll-steps-indicator__num circle-icon">1</p>
+                        <p class="poll-steps-indicator__name">Опрос</p>
+                    </div>
+                    <div class="poll-steps-indicator__item">
+                        <p class="poll-steps-indicator__num circle-icon">2</p>
+                        <p class="poll-steps-indicator__name">Внешний вид</p>
+                    </div>
+                    <div class="poll-steps-indicator__item poll-steps-indicator__item--active">
+                        <p class="poll-steps-indicator__num circle-icon">3</p>
+                        <p class="poll-steps-indicator__name">Срок опроса</p>
+                    </div>
+                    <div class="poll-steps-indicator__item">
+                        <p class="poll-steps-indicator__num circle-icon">4</p>
+                        <p class="poll-steps-indicator__name">Приватность</p>
+                    </div>
+                </div>
+
+                <div class="poll-create-form__inputs">
+
+                    <div class="poll-create-form__date-inputs input-field-group">
+                        <div class="date-input-field input-field">
+                            <label class="input-field__label">Начало</label>
+                            <input class="input" type="text" placeholder="ДД.ММ.ГГГГ">
+                            <div class="date-input-field__icon">
+                                <svg width="18" height="20" viewBox="0 0 18 20">
+                                    <use xlink:href="/assets/img/sprite-icons.svg#calendar-icon"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="date-input-field input-field">
+                            <input class="input" type="text" placeholder="00:00">
+                            <div class="date-input-field__icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20">
+                                    <use xlink:href="/assets/img/sprite-icons.svg#time-icon"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="poll-create-form__date-inputs input-field-group">
+                        <div class="date-input-field input-field">
+                            <label class="input-field__label">Конец</label>
+                            <input class="input" type="text" placeholder="ДД.ММ.ГГГГ">
+                            <div class="date-input-field__icon">
+                                <svg width="18" height="20" viewBox="0 0 18 20">
+                                    <use xlink:href="/assets/img/sprite-icons.svg#calendar-icon"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="date-input-field input-field">
+                            <input class="input" type="text" placeholder="00:00">
+                            <div class="date-input-field__icon">
+                                <svg width="20" height="20" viewBox="0 0 20 20">
+                                    <use xlink:href="/assets/img/sprite-icons.svg#time-icon"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="poll-create-form__single-checkbox single-checkbox">
+                        <label class="control-check control-check-checkbox">
+                            Сделать опрос бессрочным
+                            <input type="checkbox" />
+                            <div class="control-check_indicator"></div>
+                        </label>
+
+                    </div>
+
+                    <div class="poll-create-form__input-field-btns input-field-btns">
+                        <button class="btn btn--white" type="button">Назад</button>
+                        <button class="btn poll-create-form__next-btn" type="button">Следующий шаг</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,139 @@
+.profile-wrap {
+  margin-top: 32px;
+  display: flex;
+  flex: 1;
+}
+.profile-col {
+  &__1 {
+    margin-right: 32px;
+  }
+  &__2 {
+    width: 100%;
+    max-width: 344px;
+  }
+  &__3 {
+    margin-left: 80px;
+  }
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  cursor: pointer;
+  display: block;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  &__icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    img {
+      width: 13px;
+      height: auto;
+      border-radius: 0;
+    }
+  }
+}
+
+.profile-form {
+  &:not(:first-of-type) {
+    margin-top: 56px;
+  }
+  &__title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 24px;
+    margin-top: 16px;
+  }
+}
+
+.profile-shadow-block {
+  background: #ffffff;
+  box-shadow: 0px 7px 64px rgba(60, 78, 126, 0.07);
+  border-radius: 6px;
+  box-sizing: border-box;
+  padding: 16px;
+  width: 235px;
+  margin-bottom: 24px;
+  &__title {
+    font-size: 16px;
+    line-height: 19px;
+    color: #13142a;
+    font-family: $fontBold;
+    margin-bottom: 8px;
+  }
+}
+
+.profile-count-limit {
+  &__text {
+    font-size: 24px;
+    line-height: 30px;
+    text-decoration-line: underline;
+    font-family: $fontMedium2;
+  }
+}
+
+.profile-info-fill-check {
+  --pathColor: #fb4a56;
+  --trailColor: rgba(251, 74, 86, 0.1);
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+    color: #68688f;
+  }
+  &__circle {
+    width: 130px;
+    height: 130px;
+    margin: 16px auto 0;
+  }
+  &__circle-value {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #ffffff;
+    font-family: $fontBold;
+    background: var(--pathColor);
+    width: 57px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+  }
+  .CircularProgressbar-text {
+    background: #1b9b8f;
+  }
+}
+.profile-info-fill-check__text-filled {
+  display: none;
+}
+.profile-info-fill-check--100 {
+  --pathColor: #1b9b8f;
+  --trailColor: rgba(237, 237, 242, 0.5);
+  .profile-info-fill-check__text-filled {
+    display: block;
+  }
+  .profile-info-fill-check__text-not-filled {
+    display: none;
+  }
+}
+
+.remove-account-link {
+  display: flex;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fb4a56;
+  font-family: $fontMedium2;
+  align-items: center;
+  margin-top: 160px;
+  cursor: pointer;
+  svg {
+    margin-right: 10px;
+  }
+}

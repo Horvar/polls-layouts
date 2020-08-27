@@ -1,0 +1,59 @@
+@import "normalize";
+@import "inputs";
+@import "fonts";
+
+$font: "PT Root UI";
+$fontLight: "PT Root UI Light";
+$fontMedium: "Gilroy-Medium";
+$fontMedium2: "PT Root UI Medium";
+$fontBold: "Gilroy-SemiBold";
+
+$textColor: #2a1320;
+$textColor2: #68688f;
+$textColor3: #8f9bb3;
+$textColor4: #cad2e2;
+
+$blue: #4772f4;
+$red: #fb4a56;
+$green: #1b9b8f;
+
+html {
+  overflow-x: hidden;
+}
+body {
+  min-width: 320px;
+  font-family: $font;
+  color: $textColor;
+  font-size: 16px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+%scrollbar {
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: none;
+    background-color: #f5f5f5;
+  }
+
+  &::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+    background-color: #ededf2;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $textColor4;
+    border-radius: 50px;
+  }
+}
+
+@import "common";
+@import "profile";
+@import "popups";
+@import "poll-create-form";
+@import "table";
+@import "navigation";
+@import "client";
+@import "statistics";
+@import "lecture";

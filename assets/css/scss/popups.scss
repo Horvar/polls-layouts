@@ -1,0 +1,117 @@
+.popup {
+  display: flex;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 100;
+  justify-content: center;
+  //align-items: center;
+  will-change: transform;
+  overflow-y: scroll;
+  align-items: baseline;
+}
+.popup-inner {
+  background: #ffffff;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 384px;
+  box-sizing: border-box;
+  padding: 32px 24px 24px;
+  position: relative;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  &__title {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 32px;
+  }
+  &__radio {
+    > div .control:not(:first-of-type) {
+      margin-left: 26px;
+    }
+  }
+  &__small-text {
+    margin-top: 12px;
+  }
+  &__footer {
+    display: flex;
+    margin-top: 32px;
+    align-items: baseline;
+    &-text {
+    }
+    &-link {
+      margin-left: auto;
+      text-decoration: underline;
+      color: $blue;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  &__close {
+    background: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 21px;
+    right: 21px;
+    svg {
+      fill: $textColor2;
+      width: 14px;
+      height: 14px;
+    }
+  }
+  &__right-link {
+    text-align: right;
+    a {
+      color: $textColor2;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    &--forget-password {
+      margin: 20px 0 -5px;
+    }
+  }
+}
+
+.simple-popup {
+}
+.simple-popup__title {
+  font-size: 20px;
+  line-height: 24px;
+}
+.simple-popup__text {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 16px;
+}
+.simple-popup__btns {
+  margin-top: 24px;
+  .input-field-btns {
+    margin-top: 16px;
+  }
+}
+
+.popup-inner__desc {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: -16px;
+  margin-bottom: 24px;
+}
+
+.select-items__item--selected {
+  background: rgba(0, 126, 255, 0.04);
+  color: $blue;
+}
+.filter-label svg {
+  cursor: pointer;
+}

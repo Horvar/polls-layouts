@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+    <div id="app">
+        <div class="navigation-wrap navigation--opesn">
+            <div class="navigation-width"></div>
+            <nav class="navigation">
+                <div class="navigation__top navigation__row">
+                    <a href="" class="navigation-field navigation-field--avatar">
+                        <div class="navigation__avatar">
+                            <img src="https://russian7.ru/wp-content/uploads/2018/06/mmupack_88Y8bQp.jpg" alt="user avatar">
+                        </div>
+                        <p>
+                            Макеева <br>
+                            Екатерина
+                        </p>
+                    </a>
+                    <a href="" class="navigation-field">
+                        <div class="navigation__icon navigation__create-btn circle-icon">+</div>
+                        <p>Создать опрос</p>
+                    </a>
+                </div>
+                <div class="navigation__body navigation__row">
+                    <a href="" class="navigation-field">
+                        <div class="navigation__icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24">
+                                <use xlink:href="/assets/img/sprite-icons.svg#list-icon"></use>
+                            </svg>
+                        </div>
+                        <p>Мои опросы</p>
+                    </a>
+                    <a href="" class="navigation-field">
+                        <div class="navigation__icon">
+                            <svg width="26" height="26" viewBox="0 0 26 26">
+                                <use xlink:href="/assets/img/sprite-icons.svg#settings-icon"></use>
+                            </svg>
+                        </div>
+                        <p>Безопасность</p>
+                    </a>
+                </div>
+                <div class="navigation__footer navigation__row">
+                    <a href="" class="navigation-field">
+                        <div class="navigation__icon">
+                            <svg width="26" height="26" viewBox="0 0 26 26">
+                                <use xlink:href="/assets/img/sprite-icons.svg#question-icon"></use>
+                            </svg>
+                        </div>
+                        <p>Помощь</p>
+                    </a>
+                    <a href="" class="navigation-field navigation-field--exit-btn">
+                        <div class="navigation-exit">
+                            <svg width="18" height="18" viewBox="0 0 18 18">
+                                <use xlink:href="/assets/img/sprite-icons.svg#exit-icon"></use>
+                            </svg>
+                            <p>Выйти из аккаунта</p>
+                        </div>
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="page-wrap">
+            <div class="top-alert-block">
+                <svg class="top-alert-block__icon">
+                    <use xlink:href="/assets/img/sprite-icons.svg#alert-icon"></use>
+                </svg>
+                <p class="top-alert-block__text">Заполните профиль, чтобы создавать опросы.</p>
+                <button type="button" class="top-alert-block__close">
+                    <svg>
+                        <use xlink:href="/assets/img/sprite-icons.svg#close-icon"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="page">
+                <div class="title-wrap">
+                    <h1 class="title">Мой профиль</h1>
+                    <p class="title-notification">Все изменения сохраняются автоматически.</p>
+                </div>
+                <div class="profile-wrap">
+                    <div class="profile-col profile-col__1">
+                        <div class="profile-avatar">
+                            <img src="/assets/img/no-photo.png" alt="user avatar">
+                            <div class="profile-avatar__icon circle-icon">
+                                <img src="/assets/img/photo-icon.svg" alt="photo icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="profile-col profile-col__2">
+                        <form class="profile-form">
+                            <div class="input-field input-field--radio">
+                                <div>
+                                    <label class="control control-radio control-radio--disabled">
+                                        Я учитель
+                                        <input type="radio" checked="checked" />
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <label class="input-field__label">Фамилия *</label>
+                                <input class="input" type="text" placeholder="Иванова">
+                            </div>
+                            <div class="input-field">
+                                <label class="input-field__label">Имя *</label>
+                                <input class="input" type="text" placeholder="Иванова">
+                            </div>
+                            <div class="input-field">
+                                <label class="input-field__label">Отчество *</label>
+                                <input class="input" type="text" placeholder="Иванова">
+                            </div>
+                            <div class="input-field-group">
+                                <div class="input-field">
+                                    <label class="input-field__label">Дата рождения *</label>
+                                    <input class="input" type="text" placeholder="Иванова">
+                                </div>
+                                <div class="input-field input-field--radio">
+                                    <label class="input-field__label">Пол *</label>
+                                    <div>
+                                        <label class="control control-radio">
+                                            Муж
+                                            <input type="radio" name="radio" checked="checked" />
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                        <label class="control control-radio">
+                                            Жен
+                                            <input type="radio" name="radio"  />
+                                            <div class="control_indicator"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-field">
+                                <label class="input-field__label">Страна *</label>
+                                <div class="select">
+                                    <p class="select__value">Выберите</p>
+                                    <svg class="select__arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.415 0.210022L6 4.79502L10.585 0.210022L12 1.62502L6 7.62502L0 1.62502L1.415 0.210022Z" fill="#CAD2E2"/>
+                                    </svg>
+                                    <div class="select-items" style="display: none;">
+                                        <div class="select-items-scrolled">
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-field">
+                                <label class="input-field__label">Город *</label>
+                                <div class="select select--filled">
+                                    <p class="select__value">Выберите</p>
+                                    <svg class="select__arrow" width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.415 0.210022L6 4.79502L10.585 0.210022L12 1.62502L6 7.62502L0 1.62502L1.415 0.210022Z" fill="#CAD2E2"/>
+                                    </svg>
+                                    <div class="select-items" style="display: none;">
+                                        <div class="select-items-scrolled">
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                            <div class="select-items__item">Педиатр</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-field">
+                                <label class="input-field__label">Специальность *</label>
+                                <input class="input" type="text" placeholder="Иванова">
+                            </div>
+
+                            <div class="input-field">
+                                <label class="input-field__label">Должность *</label>
+                                <input class="input" type="text" placeholder="Иванова">
+                            </div>
+
+                            <div class="input-field">
+                                <label class="input-field__label">Опыт работы *</label>
+                                <input class="input" type="text" placeholder="Иванова">
+                            </div>
+
+                            <div class="input-field-btns">
+                                <button class="btn btn--white" type="button">Отменить</button>
+                                <button class="btn" type="button">Сохранить</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="profile-col profile-col__3">
+                        <div class="label-alert label-alert--red">
+                            <p class="label-alert__title">Лимит</p>
+                            <p class="label-alert__text">Вы не можете создавать опросы. <span class="label-alert__underline">Почему?</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
