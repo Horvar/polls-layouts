@@ -12,10 +12,12 @@ $textColor: #2a1320;
 $textColor2: #68688f;
 $textColor3: #8f9bb3;
 $textColor4: #cad2e2;
+$textColor5: #2B2B65;
 
 $blue: #4772f4;
 $red: #fb4a56;
 $green: #1b9b8f;
+$light: #EDEDF2;
 
 html {
   overflow-x: hidden;
@@ -57,3 +59,13 @@ body {
 @import "client";
 @import "statistics";
 @import "lecture";
+@import "main-page";
+@import "steps";
+@import "types";
+@import "filtration";
+@import "examples";
+@import "try";
+@import "modes";
+@import "footer";
+@import "hamburgers/hamburgers";
+@import "mobile-menu";

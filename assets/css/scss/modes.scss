@@ -1,0 +1,114 @@
+.modes {
+    & + * {
+        margin-top: 59px;
+        @media (max-width: 992px) {
+            margin-top: 10px;
+        }
+        @media (max-width: 540px) {
+            margin-top: 0;
+        }
+    }
+}
+
+.modes__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 110px;
+    @media (max-width: 992px) {
+        padding-right: 24px;
+        flex-direction: column;
+    }
+}
+.modes__col {
+    &_1 {
+        width: 100%;
+        max-width: 452px;
+    }
+    &_2 {
+        width: 100%;
+        max-width: 525px;
+    }
+}
+
+.modes__img {
+    margin-left: -32px;
+    @media (max-width: 992px) {
+        margin-left: 50%;
+        max-width: calc(110vw);
+        transform: translateX(-50%);
+    }
+}   
+
+.modes__title {
+    @media (max-width: 992px) {
+        text-align: center;
+    }
+    @media (max-width: 540px) {
+        text-align: left;
+    }
+    & + * {
+        margin-top: 30px;
+        @media (max-width: 992px) {
+            margin-top: 22px;
+        }
+        @media (max-width: 540px) {
+            margin-top: 16px;
+        }
+    }
+}
+.modes__text {
+    color: $textColor5;
+    font-size: 20px;
+    line-height: 26px;
+    @media (max-width: 992px) {
+        font-size: 18px;
+        line-height: 23px;
+    }
+    @media (max-width: 540px) {
+        font-size: 16px;
+        line-height: 21px;
+    }
+}
+
+.modes__slider {
+    &_1 {
+        & + * {
+            margin-top: 30px;
+            @media (max-width: 992px) {
+                margin-top: 22px;
+            }
+            @media (max-width: 540px) {
+                margin-top: 16px;
+            }
+        }
+    }
+    &_2 {}
+}
+
+.modes__nav {
+    button {
+        width: 40px;
+        height: 40px;
+        border: 1px solid $textColor5;
+        border-radius: 50%;
+        &:hover {
+            background: $textColor5;
+            svg {
+                fill: #fff;
+            }
+        }
+        & + * {
+            margin-left: 10px;
+        }
+        svg {
+            width: 10px;
+            height: 10px;
+            fill: $textColor5;
+        }
+    }
+    #modesPrev {
+        transform: rotate(180deg);
+    }
+    #modesNext {}
+}

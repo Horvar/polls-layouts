@@ -21,6 +21,9 @@
   position: relative;
   &__logo {
     width: 100px;
+    @media (max-width: 540px) {
+      width: 81px;
+    }
     img {
       width: 100%;
     }
@@ -30,17 +33,54 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    @media (max-width: 992px) {
+      display: none;
+    }
+    &_mobile{
+      @media (max-width: 992px) {
+        display: block;
+        position: unset;
+        left: auto;
+        top: auto;
+        transform: none;
+        margin-bottom: 32px;
+      }
+    }
     ul {
       display: flex;
+      @media (max-width: 992px) {
+        flex-direction: column;
+      }
       li {
+        & + li {
+          @media (max-width: 992px) {
+            margin-top: 16px;
+          }
+        }
         &:not(:last-of-type) {
           margin-right: 50px;
+        }
+        a {
+          color: $textColor5;
         }
       }
     }
   }
   &__sign {
     display: flex;
+    @media (max-width: 992px) {
+      display: none;
+    }
+    &_mobile{
+      @media (max-width: 992px) {
+        display: block;
+      }
+    }
+    .btn {
+      @media (max-width: 992px) {
+        width: 100%;
+      }
+    }
   }
   &__sign-fake-btn {
     box-shadow: none;
@@ -48,6 +88,12 @@
     background: none;
     font-family: $fontMedium2;
     margin-right: 30px;
+    color: $textColor5;
+    font-weight: 600;
+    @media (max-width: 992px) {
+      margin-bottom: 16px;
+      padding: 0;
+    }
   }
   &__inner {
     height: 74px;

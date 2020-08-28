@@ -663,3 +663,39 @@ textarea {
     margin-bottom: 20px;
   }
 }
+
+.h1 {
+  font-family: 'Gilroy-Bold';
+  font-size: 44px;
+  line-height: 52px;
+  @media (max-width: 992px) {
+    font-size: 38px;
+    line-height: 44px;
+  }
+  @media (max-width: 540px) {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+.h2 {
+  font-family: 'Gilroy-Bold';
+  font-size: 44px;
+  line-height: 52px;
+  @media (max-width: 992px) {
+    font-size: 38px;
+    line-height: 44px;
+  }
+  @media (max-width: 540px) {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+.container {
+  padding: 0 24px;
+  box-sizing: border-box;
+  width: 1157px;
+  max-width: 100%;
+  margin: 0 auto;
+}

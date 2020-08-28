@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лендинг</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+<div id="app">
+    <div class="client-page-wrap" style="overflow:hidden">
+        <header class="client-page-header">
+            <div class="client-page-header__inner client-page-container">
+                <a class="client-page-header__logo" href="">
+                    <img src="/assets/img/client-logo.png" alt="logo">
+                </a>
+                <nav class="client-page-header__nav">
+                    <ul>
+                        <li><a href="">Как это работает</a></li>
+                        <li><a href="">Опросы</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="client-page-header__sign">
+                    <button type="button" class="client-page-header__sign-fake-btn">Вход</button>
+                    <button type="button" class="btn">Регистрация</button>
+                </div>
+                <div class="hamburger hamburger--squeeze" id="hamburger">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>
+                <div class="mobile-menu">
+                    <div class="mobile-menu__overlay"></div>
+                    <div class="mobile-menu__container">
+                        <nav class="client-page-header__nav client-page-header__nav_mobile">
+                            <ul>
+                                <li><a href="">Как это работает?</a></li>
+                                <li><a href="">Опросы</a></li>
+                                <li><a href="">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <div class="client-page-header__sign client-page-header__sign_mobile">
+                            <button type="button" class="client-page-header__sign-fake-btn">Вход</button>
+                            <button type="button" class="btn">Регистрация</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="main-page client-page-container">
+            <h1 class="main-page-title title h1">Узнайте мнение вашей аудитории</h1>
+            <h2 class="main-page-subtitle">Сервис для учителей и лекторов, чтобы проводить <br>опросы во время уроков и лекций.</h2>
+            <a href="#" class="main-page-button btn">Попробовать</a>
+            <img src="assets/img/landing/img-landing-example.png" srcset="assets/img/landing/img-landing-example-2x.png 2x" alt="Пример опроса" class="main-page-img">
+        </div>
+        <section class="steps">
+            <div class="client-page-container steps__container">
+                <h2 class="steps__title h2">Готовый опрос за&nbsp;4&nbsp;шага</h2>
+                <ul class="steps__list">
+                    <!-- 1 -->
+                    <li class="steps__item">
+                        <span>1</span>
+                        <p>Придумайте название, описание и вопросы.</p>
+                    </li>
+                    <!-- 2 -->
+                    <li class="steps__item">
+                        <span>2</span>
+                        <p>Настройте внешний вид, загрузите обложку.</p>
+                    </li>
+                    <!-- 3 -->
+                    <li class="steps__item">
+                        <span>3</span>
+                        <p>Установите срок опроса и приватность.</p>
+                    </li>
+                    <!-- 4 -->
+                    <li class="steps__item">
+                        <span>4</span>
+                        <p>Выберите формат проведения.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="types">
+            <div class="client-page-container types__container">
+                <div class="types__col types__col_1">
+                    <img src="assets/img/landing/img-landing-types.png" srcset="assets/img/landing/img-landing-types-2x.png 2x" alt="Типы ответов" class="types__img">
+                </div>
+                <div class="types__col types__col_2">
+                    <h2 class="types__title h2">5 типов ответа <br>для точности мысли</h2>
+                    <div class="types__text">
+                        <p>Совмещайте несколько типов ответов, чтобы получить точную информацию.</p>
+                        <br>
+                        <p>Система рейтинга от 1 до 5, свой вариант, несколько вариантов или один – выбор остается за вами.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="modes">
+            <div class="client-page-container modes__container">
+                <div class="modes__col modes__col_1">
+                    <div class="modes__slider modes__slider_1" id="modesSlider1">
+                        <div class="modes__slide">
+                            <h2 class="modes__title h2">2 режима прохождения</h2>
+                            <div class="modes__text">
+                                <p>Режим «лекция» отлично подходит для презентаций или выступлений в аудитории.</p>
+                                <br>
+                                <p>Крупная статистика, в реальном времени видно изменение голосов, удобно проходить с телефона в аудитории. Автор сам контролирует скорость вопросов и показ статистики.</p>
+                            </div>
+                        </div>
+                        <div class="modes__slide">
+                            <h2 class="modes__title h2">2 режима прохождения опроса</h2>
+                            <div class="modes__text">
+                                <p>Режим «стандартный» подойдет для дистанционного прохождения.</p>
+                                <br>
+                                <p>Например, проверять знания учеников или опрашивать мнение большой группы людей. Все вопросы видны сразу, статистика доступна в личном кабинете.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modes__nav">
+                        <button id="modesPrev"><svg><use xlink:href="/assets/img/sprite-icons.svg#arrow-icon"></use></svg></button>
+                        <button id="modesNext"><svg><use xlink:href="/assets/img/sprite-icons.svg#arrow-icon"></use></svg></button>
+                    </div>
+                </div>
+                <div class="modes__col modes__col_2">
+                    <div class="modes__slider modes__slider_2" id="modesSlider2">
+                        <div class="modes__slide">
+                            <img src="assets/img/landing/img-landing-modes-1.png" srcset="assets/img/landing/img-landing-modes-1-2x.png 2x" alt="Типы ответов" class="modes__img">
+                        </div>
+                        <div class="modes__slide">
+                            <img src="assets/img/landing/img-landing-modes-2.png" srcset="assets/img/landing/img-landing-modes-2-2x.png 2x" alt="Типы ответов" class="modes__img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="filtration">
+            <div class="filtration__container client-page-container">
+                <div class="filtration__col filtration__col_1">
+                    <img src="assets/img/landing/img-landing-filtration.png" srcset="assets/img/landing/img-landing-filtration-2x.png 2x" alt="Фильтрация" class="filtration__img">
+                </div>
+                <div class="filtration__col filtration__col_2">
+                    <h2 class="filtration__title h2">Настройка приватности <br>и система фильтров</h2>
+                    <div class="filtration__text">
+                        <p>При закрытом опросе, вы можете запрашивать любые данные: фамилия, имя, отчество, возраст, пол, страна, город, специальность, должность и опыт работы.</p>
+                        <br>
+                        <p>При открытом опросе подробная статистика не собирается, зато в нем могут принять участие люди без регистрации.</p>
+                    </div>
+                    <a href="#" class="filtration__btn btn btn--white">Попробовать</a>
+                </div>
+            </div>
+        </section>
+        <section class="examples">
+            <div class="client-page-container examples__container">
+                <h2 class="examples__title h2">Доступные опросы</h2>
+                <ul class="examples__list">
+                    <!-- 1 -->
+                    <li class="examples__item">
+                        <a href="#">
+                            <p class="examples__text">Зачем фараон Хатшепсут отправляла корабли на землю Пунт?</p>
+                            <div class="examples__link"><span>Пройти опрос</span><svg><use xlink:href="/assets/img/sprite-icons.svg#arrow-icon"></use></svg></div>
+                        </a>
+                    </li>
+                    <!-- 2 -->
+                    <li class="examples__item">
+                        <a href="#">
+                            <p class="examples__text">Факторы, влияющие на качество обучения?</p>
+                            <div class="examples__link"><span>Пройти опрос</span><svg><use xlink:href="/assets/img/sprite-icons.svg#arrow-icon"></use></svg></div>
+                        </a>
+                    </li>
+                    <!-- 3 -->
+                    <li class="examples__item">
+                        <a href="#">
+                            <p class="examples__text">Ассоциативный эксперимент. Проверьте свою интуицию.</p>
+                            <div class="examples__link"><span>Пройти опрос</span><svg><use xlink:href="/assets/img/sprite-icons.svg#arrow-icon"></use></svg></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="try">
+            <div class="client-page-container try__container">
+                <div class="try__col try__col_1">
+                    <h2 class="try__title h2">Создайте бесплатно<br> свой первый опрос<br> за 6 минут!</h2>
+                    <a href="#" class="try__btn btn">Попробовать</a>
+                </div>
+                <div class="try__col try__col_2">
+                    <img src="assets/img/landing/img-landing-try.png" srcset="assets/img/landing/img-landing-try-2x.png 2x" alt="Фильтрация" class="try__img">
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="client-page-container footer__container">
+                <div class="footer__row footer__row_1">
+                    <a href="/" class="footer__logo"><img src="/assets/img/logo-white.png" srcset="/assets/img/logo-white-2x.png 2x" alt="logo"></a>
+                    <nav class="footer__nav">
+                        <div class="footer__nav-col">
+                            <p>Сервис</p>
+                            <ul>
+                                <li><a href="#">Как это работает?</a></li>
+                                <li><a href="#">Доступные опросы</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__nav-col">
+                            <p>Документы</p>
+                            <ul>
+                                <li><a href="#">Политика конфиденциальности</a></li>
+                                <li><a href="#">Политика обработки данных</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__nav-col">
+                            <p>Создайте опрос</p>
+                            <ul>
+                                <li><a href="#">Вход</a></li>
+                                <li><a href="#">Регистрация</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__nav-col">
+                            <p>Тех. поддержка</p>
+                            <ul>
+                                <li><a href="mailto:info@scardio.ru">info@scardio.ru</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+                <div class="footer__row footer__row_2">
+                    <p class="footer__copyrights">© 2020 Общество кардиологов Российской Федерации</p>
+                    <div class="footer__creators">
+                        <p>Дизайн: <a href="http://instagram.com/makeevafl">Макеева</a></p>
+                        <p>Разработка: <a href="https://x4.digital/">x4.digital</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="assets/js/script.js"></script>
+</body>
+</html>

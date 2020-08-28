@@ -1,0 +1,130 @@
+.footer {
+    color: #fff;
+    background: $textColor5;
+}
+.footer__container {
+    padding-top: 40px;
+}
+.footer__row {
+    display: flex;
+    justify-content: space-between;
+    &_1 {
+        margin-bottom: 50px;
+        @media (max-width: 650px) {
+            flex-direction: column;
+            margin-bottom: 24px;
+        }
+    }
+    &_2 {
+        overflow: hidden;
+        padding: 15px 0;
+        box-sizing: border-box;
+        position: relative;
+        @media (max-width: 650px) {
+            flex-direction: column;
+        }
+        @media (max-width: 540px) {
+            padding: 8px 0 16px;
+        }
+        &:before {
+            content: '';
+            width: 100vw;
+            height: 1px;
+            background: rgba(#fff, .1);
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
+.footer__logo {
+    margin-right: 50px;
+    min-width: 121px;
+    width: 121px;
+    @media (max-width: 650px) {
+        margin-bottom: 32px;
+    }
+    @media (max-width: 540px) {
+        min-width: 81px;
+        width: 81px;
+    }
+    img {
+        max-width: 100%;
+    }
+}
+
+.footer__copyrights {
+    opacity: .7;
+    @media (max-width: 992px) {
+        font-size: 12px;
+        line-height: 24px;
+    }
+    & + * {
+        @media (max-width: 650px) {
+            margin-top: 24px;
+        }
+    }
+}
+.footer__creators {
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    @media (max-width: 650px) {
+        margin-left: auto;
+    }
+    p {
+        & + * {
+            margin-left: 20px;
+        }
+    }
+    a {
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.footer__nav {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -50px;
+    margin-bottom: -50px;
+    @media (max-width: 650px) {
+        margin-right: -24px;
+        margin-bottom: -24px
+    }
+    @media (max-width: 540px) {
+        flex-direction: column;
+    }
+}
+
+.footer__nav-col {
+    margin-right: 50px;
+    margin-bottom: 50px;
+    @media (max-width: 650px) {
+        margin-right: 24px;
+        margin-bottom: 24px
+    }
+    p {
+        font-family: 'Gilroy-Bold';
+        font-size: 16px;
+        line-height: 19px;
+        & + * {
+            margin-top: 10px;
+        }
+    }
+    a {
+        font-size: 14px;
+        line-height: 25px;
+        opacity: .7;
+        &[href^="mailto:"] {
+            text-decoration: underline;
+        }
+        &:hover {
+            opacity: 1;
+            text-decoration: none;
+        }
+    }
+}

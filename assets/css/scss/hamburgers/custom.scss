@@ -1,0 +1,12 @@
+.hamburger {
+    display: flex;
+    z-index: 200;
+    @media (min-width: 993px) {
+        display: none;
+    }
+    &.is-active {
+        position: fixed;
+        top: 20px;
+        right: 24px;
+    }
+}
