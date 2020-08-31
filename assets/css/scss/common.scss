@@ -197,15 +197,16 @@ textarea {
   }
   &--white {
     color: $textColor2;
-    border: 1px solid $textColor4;
+    // border: 1px solid $textColor4;
+    border: none;
     background: #fff;
     &:hover {
       background: #ededf2;
-      border: 1px solid $textColor4;
+      // border: 1px solid $textColor4;
     }
     &:active {
       background: $textColor4;
-      border: 1px solid $textColor4;
+      // border: 1px solid $textColor4;
     }
   }
   &--red {

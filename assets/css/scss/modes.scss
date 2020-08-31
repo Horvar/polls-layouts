@@ -83,15 +83,23 @@
             }
         }
     }
-    &_2 {}
+    &_2 {
+        .slick-list {
+            overflow: visible;
+        }
+    }
 }
 
 .modes__nav {
+    display: flex;
     button {
         width: 40px;
         height: 40px;
         border: 1px solid $textColor5;
         border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         &:hover {
             background: $textColor5;
             svg {
