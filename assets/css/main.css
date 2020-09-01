@@ -691,42 +691,42 @@ button {
 
 @font-face {
   font-family: "PT Root UI";
-  src: url("/assets/fonts/pt/Ptrootui.woff") format("woff"), url("/assets/fonts/pt/Ptrootui.woff2") format("woff2"), url("/assets/fonts/pt/Ptrootui.ttf") format("truetype");
+  src: url("../../assets/fonts/pt/Ptrootui.woff") format("woff"), url("../../assets/fonts/pt/Ptrootui.woff2") format("woff2"), url("../../assets/fonts/pt/Ptrootui.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: "PT Root UI Medium";
-  src: url("/assets/fonts/pt/Ptrootuimedium.woff") format("woff"), url("/assets/fonts/pt/Ptrootuimedium.woff2") format("woff2"), url("/assets/fonts/pt/Ptrootuimedium.ttf") format("truetype");
+  src: url("../../assets/fonts/pt/Ptrootuimedium.woff") format("woff"), url("../../assets/fonts/pt/Ptrootuimedium.woff2") format("woff2"), url("../../assets/fonts/pt/Ptrootuimedium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: "PT Root UI Light";
-  src: url("/assets/fonts/pt/Ptrootuilight.woff") format("woff"), url("/assets/fonts/pt/Ptrootuilight.woff2") format("woff2"), url("/assets/fonts/pt/Ptrootuilight.ttf") format("truetype");
+  src: url("../../assets/fonts/pt/Ptrootuilight.woff") format("woff"), url("../../assets/fonts/pt/Ptrootuilight.woff2") format("woff2"), url("../../assets/fonts/pt/Ptrootuilight.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: "PT Root UI Bold";
-  src: url("/assets/fonts/pt/Ptrootuibold.woff") format("woff"), url("/assets/fonts/pt/Ptrootuibold.woff2") format("woff2"), url("/assets/fonts/pt/Ptrootuibold.ttf") format("truetype");
+  src: url("../../assets/fonts/pt/Ptrootuibold.woff") format("woff"), url("../../assets/fonts/pt/Ptrootuibold.woff2") format("woff2"), url("../../assets/fonts/pt/Ptrootuibold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: "Gilroy-SemiBold";
-  src: url("/assets/fonts/gilroy/Gilroy-SemiBold.woff") format("woff"), url("/assets/fonts/gilroy/Gilroy-SemiBold.ttf") format("truetype");
+  src: url("../../assets/fonts/gilroy/Gilroy-SemiBold.woff") format("woff"), url("../../assets/fonts/gilroy/Gilroy-SemiBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: "Gilroy-ExtraBold";
-  src: url("/assets/fonts/gilroy/Gilroy-ExtraBold.woff") format("woff"), url("/assets/fonts/gilroy/Gilroy-ExtraBold.ttf") format("truetype");
+  src: url("../../assets/fonts/gilroy/Gilroy-ExtraBold.woff") format("woff"), url("../../assets/fonts/gilroy/Gilroy-ExtraBold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: "Gilroy-Bold";
-  src: url("/assets/fonts/gilroy/Gilroy-Bold.woff") format("woff"), url("/assets/fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
+  src: url("../../assets/fonts/gilroy/Gilroy-Bold.woff") format("woff"), url("../../assets/fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 @font-face {
   font-family: "Gilroy-Medium";
-  src: url("/assets/fonts/gilroy/Gilroy-Medium.woff") format("woff"), url("/assets/fonts/gilroy/Gilroy-Medium.ttf") format("truetype");
+  src: url("../../assets/fonts/gilroy/Gilroy-Medium.woff") format("woff"), url("../../assets/fonts/gilroy/Gilroy-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 /* line 22, scss/main.scss */
