@@ -111,7 +111,8 @@
     background: #EDF2FF;
     border-radius: 6px;
 
-    font-family: 'Gilroy-Bold';
+    font-family: 'Gilroy-Medium';
+    font-weight: 600;
     font-size: 16px;
     line-height: 19px;
     color: #4772F4;
@@ -137,6 +138,8 @@
     }
 }
 .interview__title {
+    width: 730px;
+    max-width: 100%;
     font-family: 'Gilroy-Medium';
     font-weight: 600;
     font-size: 34px;
@@ -155,6 +158,8 @@
     }
 }
 .interview__subtitle {
+    width: 730px;
+    max-width: 100%;
     font-size: 20px;
     line-height: 28px;
     @media (max-width: 992px) {
@@ -182,9 +187,11 @@
     }
     &_nav {
         flex: 0 1 calc(50% - 15px);
+        width: calc(50% - 15px);
         padding: 15px 0;
         @media (max-width: 540px) {
             flex: 1 1 100%;
+            width: 100%;
         }
     }
     & + & {
