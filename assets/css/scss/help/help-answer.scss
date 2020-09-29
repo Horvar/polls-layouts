@@ -1,0 +1,47 @@
+.help-answer {
+    padding-top: 56px;
+    padding-bottom: 100px;
+}
+
+.help-answer__title {
+    font-family: 'Gilroy-SemiBold';
+    font-size: 24px;
+    line-height: 29px;
+    color: #13142A;
+    margin-bottom: 20px;
+}
+
+.help-answer__content {
+    font-size: 16px;
+    line-height: 20px;
+    h3 {
+        font-family: 'Gilroy-SemiBold';
+        font-size: 24px;
+        line-height: 29px;
+        color: #13142A;
+        margin-bottom: 16px;
+        &:not(:first-child) {
+            margin-top: 32px;
+        }
+    }
+    p {
+        max-width: 488px;
+    }
+    a {
+        color: #68688F;
+        &:hover {
+            color: darken(#68688F, 25%);
+        }
+    }
+    img {
+        display: inline-block;
+        margin-top: 32px;
+        margin-right: 24px;
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
+    }
+    b, strong {
+        font-weight: bold;
+    }
+}

@@ -1599,6 +1599,12 @@ textarea {
   max-width: 100%;
   margin: 0 auto; }
 
+/* line 703, scss/common.scss */
+.title-hidden {
+  width: 0;
+  height: 0;
+  overflow: hidden; }
+
 /* line 1, scss/profile.scss */
 .profile-wrap {
   margin-top: 32px;
@@ -6522,5 +6528,142 @@ p.private-statistic-question__name {
           transform: translateX(100%);
   -webkit-transition: .3s ease-out;
   transition: .3s ease-out; }
+
+/* line 1, scss/help/help-search.scss */
+.help-search {
+  height: 184px;
+  background: #4772f4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+/* line 10, scss/help/help-search.scss */
+.help-search__title {
+  font-family: 'Gilroy-SemiBold';
+  font-size: 32px;
+  line-height: 38px;
+  color: #fff;
+  margin-bottom: 32px; }
+
+/* line 18, scss/help/help-search.scss */
+.help-search__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+/* line 22, scss/help/help-search.scss */
+.help-search__input {
+  width: 488px;
+  height: 50px;
+  padding: 0 24px;
+  background: #fff;
+  border: 1px solid #EDEDF2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px; }
+
+/* line 31, scss/help/help-search.scss */
+.help-search__submit {
+  width: 176px;
+  height: 50px;
+  background: #2B2B65;
+  border-radius: 6px;
+  font-size: 16px;
+  line-height: 18px;
+  color: #fff; }
+  /* line 39, scss/help/help-search.scss */
+  .help-search__submit:hover {
+    background: #13142A; }
+
+/* line 1, scss/help/help-questions.scss */
+.help-questions {
+  padding-top: 64px; }
+
+/* line 7, scss/help/help-questions.scss */
+.help-questions__content {
+  -webkit-columns: 3;
+          columns: 3;
+  -webkit-column-gap: 32px;
+          column-gap: 32px; }
+  /* line 10, scss/help/help-questions.scss */
+  .help-questions__content h3 {
+    font-family: 'Gilroy-SemiBold';
+    font-size: 24px;
+    line-height: 29px;
+    color: #13142A;
+    margin-bottom: 16px; }
+    /* line 16, scss/help/help-questions.scss */
+    .help-questions__content h3:not(:first-child) {
+      margin-top: 32px; }
+  /* line 20, scss/help/help-questions.scss */
+  .help-questions__content a {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+    color: #68688F; }
+    /* line 25, scss/help/help-questions.scss */
+    .help-questions__content a:hover {
+      color: #323245; }
+    /* line 28, scss/help/help-questions.scss */
+    .help-questions__content a + * {
+      margin-top: 16px; }
+
+/* line 1, scss/help/help-answer.scss */
+.help-answer {
+  padding-top: 56px;
+  padding-bottom: 100px; }
+
+/* line 6, scss/help/help-answer.scss */
+.help-answer__title {
+  font-family: 'Gilroy-SemiBold';
+  font-size: 24px;
+  line-height: 29px;
+  color: #13142A;
+  margin-bottom: 20px; }
+
+/* line 14, scss/help/help-answer.scss */
+.help-answer__content {
+  font-size: 16px;
+  line-height: 20px; }
+  /* line 17, scss/help/help-answer.scss */
+  .help-answer__content h3 {
+    font-family: 'Gilroy-SemiBold';
+    font-size: 24px;
+    line-height: 29px;
+    color: #13142A;
+    margin-bottom: 16px; }
+    /* line 23, scss/help/help-answer.scss */
+    .help-answer__content h3:not(:first-child) {
+      margin-top: 32px; }
+  /* line 27, scss/help/help-answer.scss */
+  .help-answer__content p {
+    max-width: 488px; }
+  /* line 30, scss/help/help-answer.scss */
+  .help-answer__content a {
+    color: #68688F; }
+    /* line 32, scss/help/help-answer.scss */
+    .help-answer__content a:hover {
+      color: #323245; }
+  /* line 36, scss/help/help-answer.scss */
+  .help-answer__content img {
+    display: inline-block;
+    margin-top: 32px;
+    margin-right: 24px; }
+    /* line 40, scss/help/help-answer.scss */
+    .help-answer__content img:not(:last-child) {
+      margin-bottom: 32px; }
+  /* line 44, scss/help/help-answer.scss */
+  .help-answer__content b, .help-answer__content strong {
+    font-weight: bold; }
 
 /*# sourceMappingURL=main.css.map */

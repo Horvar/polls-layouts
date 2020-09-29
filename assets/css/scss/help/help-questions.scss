@@ -1,0 +1,32 @@
+.help-questions {
+    padding-top: 64px;
+}
+
+.help-questions__title {}
+
+.help-questions__content {
+    columns: 3;
+    column-gap: 32px;
+    h3 {
+        font-family: 'Gilroy-SemiBold';
+        font-size: 24px;
+        line-height: 29px;
+        color: #13142A;
+        margin-bottom: 16px;
+        &:not(:first-child) {
+            margin-top: 32px;
+        }
+    }
+    a {
+        display: block;
+        font-size: 16px;
+        line-height: 20px;
+        color: #68688F;
+        &:hover {
+            color: darken(#68688F, 25%);
+        }
+        & + * {
+            margin-top: 16px;
+        }
+    }
+}

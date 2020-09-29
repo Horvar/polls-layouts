@@ -1,0 +1,42 @@
+.help-search {
+    height: 184px;
+    background: $blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.help-search__container {}
+
+.help-search__title {
+    font-family: 'Gilroy-SemiBold';
+    font-size: 32px;
+    line-height: 38px;
+    color: #fff;
+    margin-bottom: 32px;
+}
+
+.help-search__form {
+    display: flex;
+    justify-content: space-between;
+}
+.help-search__input {
+    width: 488px;
+    height: 50px;
+    padding: 0 24px;
+    background: #fff;
+    border: 1px solid $light;
+    box-sizing: border-box;
+    border-radius: 6px;
+}
+.help-search__submit {
+    width: 176px;
+    height: 50px;
+    background: #2B2B65;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #fff;
+    &:hover {
+        background: #13142A;
+    }
+}
