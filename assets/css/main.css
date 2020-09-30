@@ -6543,8 +6543,12 @@ p.private-statistic-question__name {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  @media (max-width: 992px) {
+    /* line 1, scss/help/help-search.scss */
+    .help-search {
+      height: 240px; } }
 
-/* line 10, scss/help/help-search.scss */
+/* line 13, scss/help/help-search.scss */
 .help-search__title {
   font-family: 'Gilroy-SemiBold';
   font-size: 32px;
@@ -6552,7 +6556,7 @@ p.private-statistic-question__name {
   color: #fff;
   margin-bottom: 32px; }
 
-/* line 18, scss/help/help-search.scss */
+/* line 21, scss/help/help-search.scss */
 .help-search__form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6560,8 +6564,15 @@ p.private-statistic-question__name {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media (max-width: 992px) {
+    /* line 21, scss/help/help-search.scss */
+    .help-search__form {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
-/* line 22, scss/help/help-search.scss */
+/* line 28, scss/help/help-search.scss */
 .help-search__input {
   width: 488px;
   height: 50px;
@@ -6571,8 +6582,13 @@ p.private-statistic-question__name {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 6px; }
+  @media (max-width: 992px) {
+    /* line 28, scss/help/help-search.scss */
+    .help-search__input {
+      margin-bottom: 24px;
+      width: 100%; } }
 
-/* line 31, scss/help/help-search.scss */
+/* line 41, scss/help/help-search.scss */
 .help-search__submit {
   width: 176px;
   height: 50px;
@@ -6581,40 +6597,62 @@ p.private-statistic-question__name {
   font-size: 16px;
   line-height: 18px;
   color: #fff; }
-  /* line 39, scss/help/help-search.scss */
+  @media (max-width: 540px) {
+    /* line 41, scss/help/help-search.scss */
+    .help-search__submit {
+      width: 100%; } }
+  /* line 52, scss/help/help-search.scss */
   .help-search__submit:hover {
     background: #13142A; }
 
 /* line 1, scss/help/help-questions.scss */
 .help-questions {
   padding-top: 64px; }
+  @media (max-width: 992px) {
+    /* line 1, scss/help/help-questions.scss */
+    .help-questions {
+      padding-top: 56px; } }
+  @media (max-width: 540px) {
+    /* line 1, scss/help/help-questions.scss */
+    .help-questions {
+      padding-top: 48px; } }
 
-/* line 7, scss/help/help-questions.scss */
+/* line 13, scss/help/help-questions.scss */
 .help-questions__content {
   -webkit-columns: 3;
           columns: 3;
   -webkit-column-gap: 32px;
           column-gap: 32px; }
-  /* line 10, scss/help/help-questions.scss */
+  @media (max-width: 992px) {
+    /* line 13, scss/help/help-questions.scss */
+    .help-questions__content {
+      -webkit-columns: 2;
+              columns: 2; } }
+  @media (max-width: 540px) {
+    /* line 13, scss/help/help-questions.scss */
+    .help-questions__content {
+      -webkit-columns: 1;
+              columns: 1; } }
+  /* line 22, scss/help/help-questions.scss */
   .help-questions__content h3 {
     font-family: 'Gilroy-SemiBold';
     font-size: 24px;
     line-height: 29px;
     color: #13142A;
     margin-bottom: 16px; }
-    /* line 16, scss/help/help-questions.scss */
+    /* line 28, scss/help/help-questions.scss */
     .help-questions__content h3:not(:first-child) {
       margin-top: 32px; }
-  /* line 20, scss/help/help-questions.scss */
+  /* line 32, scss/help/help-questions.scss */
   .help-questions__content a {
     display: block;
     font-size: 16px;
     line-height: 20px;
     color: #68688F; }
-    /* line 25, scss/help/help-questions.scss */
+    /* line 37, scss/help/help-questions.scss */
     .help-questions__content a:hover {
       color: #323245; }
-    /* line 28, scss/help/help-questions.scss */
+    /* line 40, scss/help/help-questions.scss */
     .help-questions__content a + * {
       margin-top: 16px; }
 
@@ -6622,8 +6660,16 @@ p.private-statistic-question__name {
 .help-answer {
   padding-top: 56px;
   padding-bottom: 100px; }
+  @media (max-width: 992px) {
+    /* line 1, scss/help/help-answer.scss */
+    .help-answer {
+      padding-bottom: 80px; } }
+  @media (max-width: 540px) {
+    /* line 1, scss/help/help-answer.scss */
+    .help-answer {
+      padding-bottom: 60px; } }
 
-/* line 6, scss/help/help-answer.scss */
+/* line 12, scss/help/help-answer.scss */
 .help-answer__title {
   font-family: 'Gilroy-SemiBold';
   font-size: 24px;
@@ -6631,38 +6677,55 @@ p.private-statistic-question__name {
   color: #13142A;
   margin-bottom: 20px; }
 
-/* line 14, scss/help/help-answer.scss */
+/* line 20, scss/help/help-answer.scss */
 .help-answer__content {
   font-size: 16px;
   line-height: 20px; }
-  /* line 17, scss/help/help-answer.scss */
+  /* line 23, scss/help/help-answer.scss */
   .help-answer__content h3 {
     font-family: 'Gilroy-SemiBold';
     font-size: 24px;
     line-height: 29px;
     color: #13142A;
     margin-bottom: 16px; }
-    /* line 23, scss/help/help-answer.scss */
+    /* line 29, scss/help/help-answer.scss */
     .help-answer__content h3:not(:first-child) {
       margin-top: 32px; }
-  /* line 27, scss/help/help-answer.scss */
+  /* line 33, scss/help/help-answer.scss */
   .help-answer__content p {
     max-width: 488px; }
-  /* line 30, scss/help/help-answer.scss */
+  /* line 36, scss/help/help-answer.scss */
   .help-answer__content a {
     color: #68688F; }
-    /* line 32, scss/help/help-answer.scss */
+    /* line 38, scss/help/help-answer.scss */
     .help-answer__content a:hover {
       color: #323245; }
-  /* line 36, scss/help/help-answer.scss */
+  /* line 42, scss/help/help-answer.scss */
   .help-answer__content img {
     display: inline-block;
     margin-top: 32px;
-    margin-right: 24px; }
-    /* line 40, scss/help/help-answer.scss */
+    margin-right: 24px;
+    max-width: 100%; }
+    @media (max-width: 992px) {
+      /* line 42, scss/help/help-answer.scss */
+      .help-answer__content img {
+        margin-top: 24px; } }
+    @media (max-width: 540px) {
+      /* line 42, scss/help/help-answer.scss */
+      .help-answer__content img {
+        margin-top: 16px; } }
+    /* line 53, scss/help/help-answer.scss */
     .help-answer__content img:not(:last-child) {
       margin-bottom: 32px; }
-  /* line 44, scss/help/help-answer.scss */
+    @media (max-width: 992px) {
+      /* line 42, scss/help/help-answer.scss */
+      .help-answer__content img {
+        margin-bottom: 24px; } }
+    @media (max-width: 540px) {
+      /* line 42, scss/help/help-answer.scss */
+      .help-answer__content img {
+        margin-bottom: 16px; } }
+  /* line 63, scss/help/help-answer.scss */
   .help-answer__content b, .help-answer__content strong {
     font-weight: bold; }
 

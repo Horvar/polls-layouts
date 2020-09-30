@@ -1,6 +1,12 @@
 .help-answer {
     padding-top: 56px;
     padding-bottom: 100px;
+    @media (max-width: 992px) {
+        padding-bottom: 80px;
+    }
+    @media (max-width: 540px) {
+        padding-bottom: 60px;
+    }
 }
 
 .help-answer__title {
@@ -37,8 +43,21 @@
         display: inline-block;
         margin-top: 32px;
         margin-right: 24px;
+        max-width: 100%;
+        @media (max-width: 992px) {
+            margin-top: 24px;
+        }
+        @media (max-width: 540px) {
+            margin-top: 16px;
+        }
         &:not(:last-child) {
             margin-bottom: 32px;
+        }
+        @media (max-width: 992px) {
+            margin-bottom: 24px;
+        }
+        @media (max-width: 540px) {
+            margin-bottom: 16px;
         }
     }
     b, strong {

@@ -1,5 +1,11 @@
 .help-questions {
     padding-top: 64px;
+    @media (max-width: 992px) {
+        padding-top: 56px;
+    }
+    @media (max-width: 540px) {
+        padding-top: 48px;
+    }
 }
 
 .help-questions__title {}
@@ -7,6 +13,12 @@
 .help-questions__content {
     columns: 3;
     column-gap: 32px;
+    @media (max-width: 992px) {
+        columns: 2;
+    }
+    @media (max-width: 540px) {
+        columns: 1;
+    }
     h3 {
         font-family: 'Gilroy-SemiBold';
         font-size: 24px;
